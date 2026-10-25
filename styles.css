@@ -54,6 +54,9 @@
   --r-3xl: 24px;
   --r-full: 9999px;
 
+  /* desktop: header + sidebar + content never grow past this */
+  --app-max: 1680px;
+
   --font: "Roboto", system-ui, -apple-system, "Segoe UI", sans-serif;
 
   /* the product is dark-only by design */
@@ -1322,8 +1325,13 @@ body::before {
   .topbar {
     gap: var(--sp-4);
     height: 64px;
-    padding: 0 var(--sp-10);
+    padding: 0 max(var(--sp-10), calc((100% - var(--app-max)) / 2 + var(--sp-10)));
     border-bottom: 1px solid var(--border-subtle);
+  }
+
+  .layout {
+    max-width: var(--app-max);
+    margin-inline: auto;
   }
 
   .topbar__right {
