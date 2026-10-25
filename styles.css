@@ -1058,11 +1058,11 @@ body::before {
   white-space: nowrap;
 }
 
-/* positions match the Figma frames: art center at (300, 49) on mobile, (330, 74) on web */
+/* anchored to the right edge as in Figma (art center 43px from the right, 49px from the top) */
 .cashback-card__art {
   position: absolute;
   top: -15px;
-  left: 232px;
+  right: -25px;
   width: 136px;
   height: 128px;
   object-fit: cover;
@@ -1290,7 +1290,18 @@ body::before {
   display: none !important;
 }
 
+/* ---------- tablet ---------- */
+@media (min-width: 640px) and (max-width: 1023px) {
+  .list--upcoming {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--sp-4);
+  }
+}
+
 /* ---------- desktop ---------- */
+/* One grid for every section: 16px gutter; cards span thirds (Available, Upcoming,
+   Active, Cashback), quarters (welcome package) or halves (promo code, FAQ). */
 @media (min-width: 1024px) {
   body {
     background: var(--bg-page);
@@ -1390,7 +1401,11 @@ body::before {
   }
 
   .content {
+    --gutter: var(--sp-4);
+    --col-third: calc((100% - 2 * var(--gutter)) / 3);
+    --col-half: calc((100% - var(--gutter)) / 2);
     max-width: 1160px;
+    margin-inline: auto;
     padding: var(--sp-8) var(--sp-10) 64px;
   }
 
@@ -1413,26 +1428,16 @@ body::before {
   }
 
   .promo {
-    max-width: 528px;
+    width: var(--col-half);
   }
 
   .section {
     gap: var(--sp-4);
   }
 
-  .active-card {
-    max-width: 413px;
-  }
-
+  .active-card,
   .cashback-card {
-    max-width: 402px;
-  }
-
-  .cashback-card__art {
-    top: 5px;
-    left: 257px;
-    width: 145px;
-    height: 137px;
+    width: var(--col-third);
   }
 
   .card-sub__game {
@@ -1449,22 +1454,17 @@ body::before {
     overflow: visible;
   }
 
-  .carousel--available {
+  .carousel--available,
+  .list--upcoming {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: var(--sp-4);
+    gap: var(--gutter);
   }
 
   .carousel--welcome {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: var(--sp-3);
-  }
-
-  .list--upcoming {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: var(--sp-3);
+    gap: var(--gutter);
   }
 
   .dots {
@@ -1474,7 +1474,7 @@ body::before {
   .faq-columns {
     flex-direction: row;
     align-items: flex-start;
-    gap: var(--sp-6);
+    gap: var(--gutter);
   }
 
   .faq-columns > .faq-list {
