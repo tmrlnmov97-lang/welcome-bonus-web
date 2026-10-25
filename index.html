@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bonuses</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="topbar__left">
+        <button class="icon-btn mobile-only" type="button" aria-label="Menu">
+          <img src="assets/menu.svg" alt="" width="24" height="24" />
+        </button>
+        <a class="logo" href="#"><span class="logo__mark" aria-hidden="true"></span><span>BRAND</span></a>
+      </div>
+      <div class="topbar__right">
+        <div class="balance t-sm">
+          <span class="balance__label">Balance</span>
+          <span class="balance__value">€30.09</span>
+        </div>
+        <button class="btn-deposit t-sm" type="button">Deposit</button>
+        <button class="icon-square desktop-only" type="button" aria-label="Profile">
+          <img src="assets/profile.svg" alt="" width="18" height="18" />
+        </button>
+      </div>
+    </header>
+
+    <div class="layout">
+      <nav class="sidebar" aria-label="Main">
+        <a class="nav-item" href="#"><img src="assets/nav-casino.svg" alt="" /><span>Casino</span></a>
+        <a class="nav-item" href="#"><img src="assets/nav-sport.svg" alt="" /><span>Sport</span></a>
+        <a class="nav-item" href="#" aria-current="page">
+          <img src="assets/nav-bonuses.svg" alt="" /><span>Bonuses</span>
+          <span class="nav-badge"><img src="assets/dot.svg" alt="" />Available</span>
+        </a>
+        <a class="nav-item" href="#"><img src="assets/nav-vip.svg" alt="" /><span>VIP Club</span></a>
+        <a class="nav-item" href="#"><img src="assets/nav-new.svg" alt="" /><span>New releases</span></a>
+        <a class="nav-item" href="#"><img src="assets/nav-live.svg" alt="" /><span>Live shows</span></a>
+        <a class="nav-item" href="#"><img src="assets/nav-providers.svg" alt="" /><span>Providers</span></a>
+        <a class="nav-item" href="#"><img src="assets/nav-support.svg" alt="" /><span>Support</span></a>
+        <a class="nav-item" href="#"><img src="assets/nav-refer.svg" alt="" /><span>Refer &amp; earn</span></a>
+      </nav>
+
+      <main class="content">
+        <div class="stack stack--top">
+          <!-- VIP · mobile -->
+          <section class="vip mobile-only" aria-label="VIP Club">
+            <div class="vip__header t-sm">
+              <span class="vip__club">VIP Club</span>
+              <a class="vip__levels" href="#">All levels <img src="assets/chevron-right-vip.svg" alt="" width="16" height="16" /></a>
+            </div>
+            <div class="vip__rank">
+              <div class="ring ring--sm" role="img" aria-label="50% to Bronze 3">
+                <span class="ring__glow"><img src="assets/vip-glow.svg" alt="" /></span>
+                <img class="ring__layer" src="assets/vip-ring-track.svg" alt="" />
+                <img class="ring__progress" src="assets/vip-ring-progress.svg" alt="" />
+                <img class="ring__emblem" src="assets/vip-emblem.png" alt="" />
+              </div>
+              <div>
+                <p class="vip__level">Bronze 2</p>
+                <p class="vip__next t-sm">€41 more in bets to Bronze 3</p>
+              </div>
+            </div>
+            <div class="vip__reward">
+              <div>
+                <p class="vip__reward-label t-sm">Reward Hub</p>
+                <p class="vip__reward-amount">€158.00</p>
+              </div>
+              <button class="btn btn--md btn--primary vip__claim" type="button">Claim</button>
+            </div>
+          </section>
+
+          <!-- VIP · web -->
+          <section class="vip-web desktop-only" aria-label="VIP Club">
+            <div class="vip-web__status">
+              <div class="ring ring--lg" role="img" aria-label="50% to Bronze 3">
+                <span class="ring__glow"><img src="assets/vip-web-glow.svg" alt="" /></span>
+                <img class="ring__layer" src="assets/vip-web-track.svg" alt="" />
+                <img class="ring__progress" src="assets/vip-web-progress.svg" alt="" />
+                <img class="ring__emblem" src="assets/vip-emblem.png" alt="" />
+              </div>
+              <div class="vip-web__titles">
+                <p class="t-sm w-600" style="color: rgba(255, 255, 255, 0.6)">VIP Club</p>
+                <p class="vip-web__level">Bronze 2</p>
+                <p class="t-sm w-500 c-muted">Your VIP level</p>
+              </div>
+            </div>
+            <span class="vip-web__divider" aria-hidden="true"></span>
+            <div class="vip-web__path">
+              <div class="vip-web__row">
+                <p class="t-base w-600">€41 more in bets to Bronze 3</p>
+                <span class="spacer"></span>
+                <a class="vip__levels t-sm w-600" href="#">All levels <img src="assets/chevron-right-24.svg" alt="" width="24" height="24" /></a>
+              </div>
+              <div class="vip-web__bar" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="76" aria-label="VIP progress">
+                <div class="vip-web__bar-fill" style="width: 58%"></div>
+              </div>
+              <div class="vip-web__row t-sm">
+                <p class="w-600" style="color: rgba(255, 255, 255, 0.85)">35 / 76 XP</p>
+                <span class="spacer"></span>
+                <p class="w-500 c-muted">Bronze 3 unlocks</p>
+                <span class="perk">Cashback 7%</span>
+                <span class="perk">Weekly free spins</span>
+              </div>
+            </div>
+            <span class="vip-web__divider" aria-hidden="true"></span>
+            <div class="vip-web__reward">
+              <div>
+                <p class="t-sm w-500 c-muted">Reward Hub</p>
+                <p class="vip-web__reward-amount">€158.00</p>
+              </div>
+              <button class="btn btn--md btn--primary" type="button" style="width: 100px">Claim</button>
+            </div>
+          </section>
+
+          <h1 class="page-title">Bonuses</h1>
+
+          <div class="promo" data-state="default">
+            <div class="promo__field">
+              <img class="promo__icon" src="assets/promo-tag.svg" alt="" />
+              <label class="visually-hidden" for="promo-code">Promo code</label>
+              <input class="promo__input" id="promo-code" type="text" placeholder="Have a promo code?" autocomplete="off" spellcheck="false" />
+              <button class="btn btn--md btn--primary promo__apply" type="button" disabled>Apply</button>
+              <button class="icon-square promo__clear" type="button" aria-label="Remove promo code">
+                <img src="assets/close.svg" alt="" width="16" height="16" />
+              </button>
+            </div>
+            <p class="promo__message t-sm" role="status"></p>
+          </div>
+        </div>
+
+        <div class="stack stack--active">
+          <div class="tabs" role="tablist" aria-label="Product">
+            <button class="tab t-sm" type="button" role="tab" aria-selected="true" data-filter="all">All</button>
+            <button class="tab t-sm" type="button" role="tab" aria-selected="false" data-filter="casino">Casino</button>
+            <button class="tab t-sm" type="button" role="tab" aria-selected="false" data-filter="sport">Sport</button>
+          </div>
+
+          <section class="section section--roomy" data-section>
+            <div class="section-header">
+              <h2 class="section-header__title">Active <span class="count" data-count>1</span></h2>
+            </div>
+            <article class="active-card" data-category="casino">
+              <div class="active-card__head">
+                <div class="active-card__title">
+                  <span class="tile"><img src="assets/gift-emoji.png" alt="" /></span>
+                  <div>
+                    <p class="t-base w-600">Daily bonus 75%</p>
+                    <p class="t-sm w-500 c-tertiary">€100 bonus · wager x5</p>
+                  </div>
+                </div>
+                <button class="icon-btn" type="button" aria-label="Bonus details">
+                  <img src="assets/info-24.svg" alt="" width="24" height="24" />
+                </button>
+              </div>
+              <div class="progress">
+                <p class="t-lg w-600">€250 of €500 wagered</p>
+                <div class="bar" role="progressbar" aria-valuenow="250" aria-valuemin="0" aria-valuemax="500" aria-label="Wagering progress">
+                  <div class="bar__fill" style="width: 50%"></div>
+                </div>
+                <div class="meta t-sm">
+                  <span class="c-tertiary">Max bet €5</span>
+                  <span class="c-secondary">Expires in 3d 23h</span>
+                </div>
+              </div>
+              <div class="actions">
+                <button class="btn btn--lg btn--primary btn--fill" type="button">Play</button>
+                <button class="btn btn--lg btn--ghost" type="button">Cancel</button>
+              </div>
+            </article>
+          </section>
+        </div>
+
+        <section class="section section--roomy" data-section>
+          <div class="section-header">
+            <h2 class="section-header__title">Available <span class="count" data-count>3</span></h2>
+            <a class="link t-sm" href="#">See all</a>
+          </div>
+          <div class="carousel carousel--available">
+            <article class="available-card" data-category="casino">
+              <div class="available-card__top">
+                <img class="available-card__art" src="assets/game-sweet-bonanza.png" alt="" />
+                <div style="min-width: 0">
+                  <p class="card-title">50 free spins</p>
+                  <p class="card-sub t-sm"><span class="card-sub__game">Sweet Bonanza</span><span class="card-sub__sep"> · </span>wager x30</p>
+                </div>
+              </div>
+              <div class="available-card__bottom">
+                <button class="btn btn--md btn--primary btn--fill" type="button">Claim</button>
+                <button class="icon-square" type="button" aria-label="Bonus details"><img src="assets/info-18.svg" alt="" width="18" height="18" /></button>
+              </div>
+            </article>
+            <article class="available-card" data-category="casino">
+              <div class="available-card__top">
+                <img class="available-card__art" src="assets/game-anubis.png" alt="" />
+                <div style="min-width: 0">
+                  <p class="card-title">50 free spins</p>
+                  <p class="card-sub t-sm"><span class="card-sub__game">Treasure of Anubis</span><span class="card-sub__sep"> · </span>wager x30</p>
+                </div>
+              </div>
+              <div class="available-card__bottom">
+                <button class="btn btn--md btn--primary btn--fill" type="button">Claim</button>
+                <button class="icon-square" type="button" aria-label="Bonus details"><img src="assets/info-18.svg" alt="" width="18" height="18" /></button>
+              </div>
+            </article>
+            <article class="available-card" data-category="casino">
+              <div class="available-card__top">
+                <img class="available-card__art" src="assets/game-olympus.png" alt="" />
+                <div style="min-width: 0">
+                  <p class="card-title">50 free spins</p>
+                  <p class="card-sub t-sm"><span class="card-sub__game">Gate of Olympus</span><span class="card-sub__sep"> · </span>wager x30</p>
+                </div>
+              </div>
+              <div class="available-card__bottom">
+                <button class="btn btn--md btn--primary btn--fill" type="button">Claim</button>
+                <button class="icon-square" type="button" aria-label="Bonus details"><img src="assets/info-18.svg" alt="" width="18" height="18" /></button>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section section--roomy" data-section>
+          <div class="section-header">
+            <h2 class="section-header__title">Up to 500% + 500 FS</h2>
+            <a class="link t-sm desktop-only" href="#">See all</a>
+          </div>
+          <div class="carousel carousel--welcome" data-carousel="welcome">
+            <article class="deposit-card deposit-card--1" data-category="casino">
+              <div class="deposit-card__art">
+                <img class="deposit-card__gift" src="assets/gift-1.png" alt="" />
+                <button class="deposit-card__info icon-btn" type="button" aria-label="1st deposit terms"><img src="assets/info-20.svg" alt="" width="20" height="20" /></button>
+              </div>
+              <div class="deposit-card__body">
+                <div class="deposit-card__headline">
+                  <p class="deposit-card__bonus"><span class="deposit-card__percent">+100%</span><span class="deposit-card__fs">+ 70 FS</span></p>
+                  <p class="deposit-card__caption t-sm"><span>1st deposit</span><span class="sep">·</span><span>min €20 · wager x35</span></p>
+                </div>
+                <button class="btn btn--lg btn--primary btn--block" type="button">Get bonus</button>
+              </div>
+            </article>
+            <article class="deposit-card deposit-card--2 deposit-card--locked" data-category="casino">
+              <div class="deposit-card__art">
+                <img class="deposit-card__gift" src="assets/gift-2.png" alt="" />
+                <button class="deposit-card__info icon-btn" type="button" aria-label="2nd deposit terms"><img src="assets/info-20.svg" alt="" width="20" height="20" /></button>
+              </div>
+              <div class="deposit-card__body">
+                <div class="deposit-card__headline">
+                  <p class="deposit-card__bonus"><span class="deposit-card__percent">+120%</span><span class="deposit-card__fs">+ 100 FS</span></p>
+                  <p class="deposit-card__caption t-sm"><span>2nd deposit</span><span class="sep">·</span><span>min €20 · wager x35</span></p>
+                </div>
+                <button class="btn btn--lg btn--disabled btn--block" type="button" disabled><img src="assets/lock.svg" alt="" width="20" height="20" />Opens after the 1st</button>
+              </div>
+            </article>
+            <article class="deposit-card deposit-card--3 deposit-card--locked" data-category="casino">
+              <div class="deposit-card__art">
+                <img class="deposit-card__gift" src="assets/gift-3.png" alt="" />
+                <button class="deposit-card__info icon-btn" type="button" aria-label="3rd deposit terms"><img src="assets/info-20.svg" alt="" width="20" height="20" /></button>
+              </div>
+              <div class="deposit-card__body">
+                <div class="deposit-card__headline">
+                  <p class="deposit-card__bonus"><span class="deposit-card__percent">+130%</span><span class="deposit-card__fs">+ 150 FS</span></p>
+                  <p class="deposit-card__caption t-sm"><span>3rd deposit</span><span class="sep">·</span><span>min €20 · wager x35</span></p>
+                </div>
+                <button class="btn btn--lg btn--disabled btn--block" type="button" disabled><img src="assets/lock.svg" alt="" width="20" height="20" />Opens after the 2nd</button>
+              </div>
+            </article>
+            <article class="deposit-card deposit-card--4 deposit-card--locked" data-category="casino">
+              <div class="deposit-card__art">
+                <img class="deposit-card__gift" src="assets/gift-4.png" alt="" />
+                <button class="deposit-card__info icon-btn" type="button" aria-label="4th deposit terms"><img src="assets/info-20.svg" alt="" width="20" height="20" /></button>
+              </div>
+              <div class="deposit-card__body">
+                <div class="deposit-card__headline">
+                  <p class="deposit-card__bonus"><span class="deposit-card__percent">+150%</span><span class="deposit-card__fs">+ 180 FS</span></p>
+                  <p class="deposit-card__caption t-sm"><span>4th deposit</span><span class="sep">·</span><span>min €20 · wager x35</span></p>
+                </div>
+                <button class="btn btn--lg btn--disabled btn--block" type="button" disabled><img src="assets/lock.svg" alt="" width="20" height="20" />Opens after the 3rd</button>
+              </div>
+            </article>
+          </div>
+          <div class="dots" data-dots="welcome" aria-hidden="true">
+            <span class="dot is-active"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          </div>
+        </section>
+
+        <section class="section" data-section>
+          <div class="section-header">
+            <h2 class="section-header__title">Cashback</h2>
+          </div>
+          <article class="cashback-card" data-category="casino">
+            <img class="cashback-card__art" src="assets/cashback-art.png" alt="" />
+            <div class="cashback-card__body">
+              <div class="cashback-card__texts">
+                <p class="t-base w-600 c-secondary">10% cashback</p>
+                <p class="t-3xl w-700">≈ €15.80</p>
+                <p class="t-sm w-500 c-tertiary">Credited automatically on Monday</p>
+              </div>
+              <a class="t-sm w-600 c-secondary" href="#">Terms</a>
+            </div>
+          </article>
+        </section>
+
+        <section class="section" data-section>
+          <div class="section-header">
+            <h2 class="section-header__title">Upcoming <span class="count" data-count>2</span></h2>
+            <a class="link t-sm" href="#">See all</a>
+          </div>
+          <div class="list list--upcoming">
+            <article class="upcoming-card" data-category="casino">
+              <div class="upcoming-card__top">
+                <span class="upcoming-icon">
+                  <span class="upcoming-icon__frame"></span>
+                  <img class="upcoming-icon__glyph" src="assets/slot-machine.svg" alt="" />
+                  <span class="upcoming-icon__badge"><img src="assets/lock-filled.svg" alt="" /></span>
+                </span>
+                <div style="min-width: 0">
+                  <p class="card-title">50 free spins</p>
+                  <p class="card-sub t-sm">Book of Gold · wager x30</p>
+                </div>
+              </div>
+              <div class="divider"></div>
+              <div class="upcoming-card__bottom">
+                <div class="upcoming-card__when">
+                  <span class="upcoming-card__when-label t-sm">Opens</span>
+                  <span class="upcoming-card__when-value">in 23h 40m</span>
+                </div>
+                <button class="remind t-sm" type="button" aria-pressed="false" data-remind>
+                  <img src="assets/check.svg" alt="" /><span>Remind me</span>
+                </button>
+              </div>
+            </article>
+            <article class="upcoming-card" data-category="sport">
+              <div class="upcoming-card__top">
+                <span class="upcoming-icon">
+                  <span class="upcoming-icon__frame"></span>
+                  <img class="upcoming-icon__glyph" src="assets/sport.svg" alt="" />
+                  <span class="upcoming-icon__badge"><img src="assets/lock-filled.svg" alt="" /></span>
+                </span>
+                <div style="min-width: 0">
+                  <p class="card-title">Freebet €10</p>
+                  <p class="card-sub t-sm">Sport · odds 1.8+</p>
+                </div>
+              </div>
+              <div class="divider"></div>
+              <div class="upcoming-card__bottom">
+                <div class="upcoming-card__when">
+                  <span class="upcoming-card__when-label t-sm">Opens</span>
+                  <span class="upcoming-card__when-value">on Friday, Oct 31</span>
+                </div>
+                <button class="remind t-sm" type="button" aria-pressed="true" data-remind>
+                  <img src="assets/check.svg" alt="" /><span>Reminder set</span>
+                </button>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-header">
+            <h2 class="section-header__title">FAQ</h2>
+          </div>
+          <div class="faq-columns">
+            <div class="faq-list">
+              <div class="faq is-open">
+                <button class="faq__question" type="button" aria-expanded="true">
+                  <span>How do I get a bonus?</span>
+                  <img class="faq__chevron faq__chevron--up" src="assets/chevron-up.svg" alt="" />
+                  <img class="faq__chevron faq__chevron--down" src="assets/chevron-down.svg" alt="" />
+                </button>
+                <div class="faq__answer t-sm">
+                  <p>Deposit at least the minimum amount shown on the bonus card. The bonus is credited at once and appears in Active bonus.</p>
+                  <a class="faq__more" href="#">More in the rules <img src="assets/chevron-right-link.svg" alt="" /></a>
+                </div>
+              </div>
+              <div class="faq">
+                <button class="faq__question" type="button" aria-expanded="false">
+                  <span>How does wagering work?</span>
+                  <img class="faq__chevron faq__chevron--up" src="assets/chevron-up.svg" alt="" />
+                  <img class="faq__chevron faq__chevron--down" src="assets/chevron-down.svg" alt="" />
+                </button>
+                <div class="faq__answer t-sm">
+                  <p>Bet the bonus amount times the wager shown on the card. Progress is tracked in Active bonus.</p>
+                  <a class="faq__more" href="#">More in the rules <img src="assets/chevron-right-link.svg" alt="" /></a>
+                </div>
+              </div>
+              <div class="faq">
+                <button class="faq__question" type="button" aria-expanded="false">
+                  <span>Where do I see the expiry date?</span>
+                  <img class="faq__chevron faq__chevron--up" src="assets/chevron-up.svg" alt="" />
+                  <img class="faq__chevron faq__chevron--down" src="assets/chevron-down.svg" alt="" />
+                </button>
+                <div class="faq__answer t-sm">
+                  <p>Every active bonus shows the time left under its progress bar.</p>
+                  <a class="faq__more" href="#">More in the rules <img src="assets/chevron-right-link.svg" alt="" /></a>
+                </div>
+              </div>
+            </div>
+            <div class="faq-list">
+              <div class="faq">
+                <button class="faq__question" type="button" aria-expanded="false">
+                  <span>Can I cancel a bonus?</span>
+                  <img class="faq__chevron faq__chevron--up" src="assets/chevron-up.svg" alt="" />
+                  <img class="faq__chevron faq__chevron--down" src="assets/chevron-down.svg" alt="" />
+                </button>
+                <div class="faq__answer t-sm">
+                  <p>Yes, from the active bonus card. The bonus balance and its winnings are removed, your real money stays.</p>
+                  <a class="faq__more" href="#">More in the rules <img src="assets/chevron-right-link.svg" alt="" /></a>
+                </div>
+              </div>
+              <div class="faq">
+                <button class="faq__question" type="button" aria-expanded="false">
+                  <span>Is there a limit on bonus withdrawals?</span>
+                  <img class="faq__chevron faq__chevron--up" src="assets/chevron-up.svg" alt="" />
+                  <img class="faq__chevron faq__chevron--down" src="assets/chevron-down.svg" alt="" />
+                </button>
+                <div class="faq__answer t-sm">
+                  <p>Some bonuses cap the winnings you can withdraw. The cap is listed in the bonus terms.</p>
+                  <a class="faq__more" href="#">More in the rules <img src="assets/chevron-right-link.svg" alt="" /></a>
+                </div>
+              </div>
+              <div class="faq desktop-only">
+                <button class="faq__question" type="button" aria-expanded="false">
+                  <span>Which games count for wagering?</span>
+                  <img class="faq__chevron faq__chevron--up" src="assets/chevron-up.svg" alt="" />
+                  <img class="faq__chevron faq__chevron--down" src="assets/chevron-down.svg" alt="" />
+                </button>
+                <div class="faq__answer t-sm">
+                  <p>Slots count 100%. Other games may count less or not at all, see the bonus terms.</p>
+                  <a class="faq__more" href="#">More in the rules <img src="assets/chevron-right-link.svg" alt="" /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
