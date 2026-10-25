@@ -1404,8 +1404,6 @@ body::before {
     --gutter: var(--sp-4);
     --col-third: calc((100% - 2 * var(--gutter)) / 3);
     --col-half: calc((100% - var(--gutter)) / 2);
-    max-width: 1160px;
-    margin-inline: auto;
     padding: var(--sp-8) var(--sp-10) 64px;
   }
 
